@@ -1,0 +1,82 @@
+/* Make the whole screen act like a flexbox */
+.app-container {
+  display: flex;
+  justify-content: center;  /* Centers left ↔ right */
+  align-items: center;      /* Centers top ↕ bottom */
+              /* Full viewport height */
+  background-color: #f0f0f0;
+  margin: 0;                /* Remove default spacing */
+  padding: 0;
+
+  position:absolute;
+
+  left : 500px;
+  top: 200px;
+}
+
+/* The white card in the middle */
+.todo-wrapper {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: center;
+}
+
+
+.input-section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.input-section input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.input-section button {
+  margin-left: 10px;
+  padding: 8px 12px;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.input-section button:hover {
+  background: #0056b3;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8px 0;
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+}
+
+.todo-item span {
+  flex: 1;
+  text-align: left;
+  cursor: pointer;
+}
+
+.todo-item span.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.todo-item button {
+  margin-left: 8px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 16px;
+}
+
